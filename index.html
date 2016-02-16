@@ -31,7 +31,7 @@ about: 'about.html'
 
 
     <div class="extra-pagination inner">
-        {% include pagination.html %}
+        {% include "pagination.html" %}
     </div>
 
     {% for post in paginator.posts %}
@@ -48,7 +48,7 @@ about: 'about.html'
                 <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
                 {{ site.author }}
             {% endif %}
-            {% if post.categories.size > 0 %} 
+            {% if post.categories %} 
                 {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
@@ -76,6 +76,6 @@ about: 'about.html'
 
     {% endfor %}
 
-    {% include pagination.html %}
+    {% include "pagination.html" %}
 
 </main>

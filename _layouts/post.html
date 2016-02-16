@@ -20,7 +20,7 @@ post_class: post-template
             <h1 class="post-title">{{ page.title }}</h1>
             <section class="post-meta">
                 <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-                {% if page.categories.size > 0 %}
+                {% if page.categories %}
                     {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
                 {% endif %}
             </section>
@@ -38,7 +38,7 @@ post_class: post-template
 
         <!-- <span class="post-meta">
             <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-            {% if page.categories.size > 0 %}
+            {% if page.categories %}
                 {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
             {% endif %}
         </span> -->
@@ -78,11 +78,11 @@ post_class: post-template
             {% endif %}
 
             <!-- Share links section -->
-            {% include share.html %}
+            {% include "share.html" %}
 
             <!-- Disqus comments -->
             {% if page.disqus %}
-                {% include disqus.html %}
+                {% include "disqus.html" %}
             {% endif %}
 
         </footer>
