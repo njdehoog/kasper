@@ -12,3 +12,4 @@ google_analytics: 'UA-XXXXXXXX-X'
 
 url: 'http://example.com'
 author: 'Your Name'
+author_bio: "Follow me on [Twitter](https://twitter.com/username) or [GitHub](https://github.com/username)."
