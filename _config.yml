@@ -1,6 +1,6 @@
 title: Your Blog Title
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+description: Your blog description
+meta_description: "Your New Spelt Site, Blogging about stuffs"
 
 markdown: kramdown
 highlighter: pygments
