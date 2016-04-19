@@ -2,8 +2,6 @@ title: Your Blog Title
 description: Your blog description
 meta_description: "Your New Spelt Site, Blogging about stuffs"
 
-markdown: kramdown
-highlighter: pygments
 logo: false
 paginate: 15
 baseurl: "/"
